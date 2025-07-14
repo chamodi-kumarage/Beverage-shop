@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeverageShop</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">BeverageShop</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Drinks</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search drinks...">
+                <button id="searchButton"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cartCount">0</span>
+            </div>
+            <div class="user-menu">
+                <i class="fas fa-user"></i>
+                <div class="dropdown">
+                    <a href="#login">Login</a>
+                    <a href="#register">Register</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    
+    <main>
+     principle      <section class="menu-items">
+        <div class="menu-item">
+          <img src="image/10-removebg-preview.png" alt="Chewy Cherry">
+          <h3>Chewy Cherry</h3>
+          <p>RS.900.00</p>
+          <button class="add-to-cart-btn" data-name="Chewy Cherry" data-price="900.00">Add to Cart</button>
+          <input type="number" class="quantity-input" min="1" value="1" data-name="Chewy Cherry" data-price="900.00">
+        </div>
+        <div class="menu-item">
+          <img src="image/drink 10.jpg" alt="Tropical Mango Tango">
+          <h3>Tropical Mango Tango</h3>
+          <p>RS.600.00</p>
+          <button class="add-to-cart-btn" data-name="Tropical Mango Tango" data-price="600.00">Add to Cart</button>
+          <input type="number" class="quantity-input" min="1" value="1" data-name="Tropical Mango Tango" data-price="600.00">
+        </div>
+        <div class="menu-item">
+          <img src="image/drink 12.jpg" alt="Matcha Boo">
+          <h3>Matcha Boo</h3>
+          <p>RS.400.00</p>
+          <button class="add-to-cart-btn" data-name="Matcha Boo" data-price="400.00">Add to Cart</button>
+          <input type="number" class="quantity-input" min="1" value="1" data-name="Matcha Boo" data-price="400.00">
+        </div>
+        <div class="menu-item">
+          <img src="image/drink 11.jpg" alt="Pink Fav">
+          <h3>Pink Fav</h3>
+          <p>RS.200.00</p>
+          <button class="add-to-cart-btn" data-name="Pink Fav" data-price="200.00">Add to Cart</button>
+          <input type="number" class="quantity-input" min="1" value="1" data-name="Pink Fav" data-price="200.00">
+        </div>
+        <div class="menu-item">
+          <img src="image/drink 5.jpg" alt="Ice Tea">
+          <h3>Ice Tea</h3>
+          <p>RS.400.00</p>
+          <button class="add-to-cart-btn" data-name="Ice Tea" data-price="400.00">Add to Cart</button>
+          <input type="number" class="quantity-input" min="1" value="1" data-name="Ice Tea" data-price="400.00">
+        </div>
+        <div class="menu-item">
+          <img src="image/6-removebg-preview.png" alt="Spicy Doritos">
+          <h3>Spicy Doritos</h3>
+          <p>RS.350.00</p>
+          <button class="add-to-cart-btn" data-name="Spicy Doritos" data-price="350.00">Add to Cart</button>
+          <input type="number" class="quantity-input" min="1" value="1" data-name="Spicy Doritos" data-price="350.00">
+        </div>
+        <div class="menu-item">
+          <img src="image/2-removebg-preview.png" alt="Blueberry Boo">
+          <h3>Blueberry Boo</h3>
+          <p>RS.600.00</p>
+          <button class="add-to-cart-btn" data-name="Blueberry Boo" data-price="600.00">Add to Cart</button>
+          <input type="number" class="quantity-input" min="1" value="1" data-name="Blueberry Boo" data-price="600.00">
+        </div>
+        <div class="menu-item">
+          <img src="image/3-removebg-preview.png" alt="Mr Red">
+          <h3>Mr Red</h3>
+          <p>RS.400.00</p>
+          <button class="add-to-cart-btn" data-name="Mr Red" data-price="400.00">Add to Cart</button>
+          <input type="number" class="quantity-input" min="1" value="1" data-name="Mr Red" data-price="400.00">
+        </div>
+        <div class="menu-item">
+          <img src="image/4-removebg-preview.png" alt="Rose Mojito">
+          <h3>Rose Mojito</h3>
+          <p>RS.600.00</p>
+          <button class="add-to-cart-btn" data-name="Rose Mojito" data-price="600.00">Add to Cart</button>
+          <input type="number" class="quantity-input" min="1" value="1" data-name="Rose Mojito" data-price="600.00">
+        </div>
+        <div class="menu-item">
+          <img src="image/5-removebg-preview.png" alt="Mango Mojito">
+          <h3>Mango Mojito</h3>
+          <p>RS.300.00</p>
+          <button class="add-to-cart-btn" data-name="Mango Mojito" Juno        <input type="number" class="quantity-input" min="1" value="1" data-name="Mango Mojito" data-price="300.00">
+        </div>
+        <div class="menu-item">
+          <img src="image/7-removebg-preview.png" alt="Whiskey Mojito">
+          <h3>Whiskey Mojito</h3>
+          <p>RS.350.00</p>
+          <button class="add-to-cart-btn" data-name="Whiskey Mojito" data-price="350.00">Add to Cart</button>
+          <input type="number" class="quantity-input" min="1" value="1" data-name="Whiskey Mojito" data-price="350.00">
+        </div>
+        <div class="menu-item">
+          <img src="image/8-removebg-preview.png" alt="Blue Shaky Mojito">
+          <h3>Blue Shaky Mojito</h3>
+          <p>RS.350.00</p>
+          <button class="add-to-cart-btn" data-name="Blue Shaky Mojito" data-price="350.00">Add to Cart</button>
+          <input type="number" class="quantity-input" min="1" value="1" data-name="Blue Shaky Mojito" data-price="350.00">
+        </div>
+        <div class="menu-item">
+          <img src="image/9-removebg-preview.png" alt="Sprite Lemonade">
+          <h3>Sprite Lemonade</h3>
+          <p>RS.350.00</p>
+          <button class="add-to-cart-btn" data-name="Sprite Lemonade" data-price="350.00">Add to Cart</button>
+          <input type="number" class="quantity-input" min="1" value="1" data-name="Sprite Lemonade" data-price="350.00">
+        </div>
+        <div class="menu-item">
+          <img src="image/10-removebg-preview.png" alt="Pineapple Bonanza">
+          <h3>Pineapple Bonanza</h3>
+          <p>RS.800.00</p>
+          <button class="add-to-cart-btn" data-name="Pineapple Bonanza" data-price="800.00">Add to Cart</button>
+          <input type="number" class="quantity-input" min="1" value="1" data-name="Pineapple Bonanza" data-price="800.00">
+        </div>
+        <div class="menu-item">
+          <img src="image/11-removebg-preview.png" alt="Raspberry Bonanza">
+          <h3>Raspberry Bonanza</h3>
+          <p>RS.350.00</p>
+          <button class="add-to-cart-btn" data-name="Raspberry Bonanza" data-price="350.00">Add to Cart</button>
+          <input type="number" class="quantity-input" min="1" value="1" data-name="Raspberry Bonanza" data-price="350.00">
+        </div>
+        <div class="menu-item">
+          <img src="image/13-removebg-preview.png" alt="Classic Lays">
+          <h3>Classic Lays</h3>
+          <p>RS.350.00</p>
+          <button class="add-to-cart-btn" data-name="Classic Lays" data-price="350.00">Add to Cart</button>
+          <input type="number" class="quantity-input" min="1" value="1" data-name="Classic Lays" data-price="350.00">
+        </div>
+        <div class="menu-item">
+          <img src="image/drink 3.jpg" alt="Chewy Mango">
+          <h3>Chewy Mango</h3>
+          <p>RS.800.00</p>
+          <button class="add-to-cart-btn" data-name="Chewy Mango" data-price="800.00">Add to Cart</button>
+          <input type="number" class="quantity-input" min="1" value="1" data-name="Chewy Mango" data-price="800.00">
+        </div>
+        <div class="menu-item">
+          <img src="image/14-removebg-preview.png" alt="Classic Smoothie">
+          <h3>Classic Smoothie</h3>
+          <p>RS.350.00</p>
+          <button class="add-to-cart-btn" data-name="Classic Smoothie" data-price="350.00">Add to Cart</button>
+          <input type="number" class="quantity-input" min="1" value="1" data-name="Classic Smoothie" data-price="350.00">
+        </div>
+        <div class="menu-item">
+          <img src="image/drink 4.jpg" alt="Chocolate Burst">
+          <h3>Chocolate Burst</h3>
+          <p>RS.900.00</p>
+          <button class="add-to-cart-btn" data-name="Chocolate Burst" data-price="900.00">Add to Cart</button>
+          <input type="number" class="quantity-input" min="1" value="1" data-name="Chocolate Burst" data-price="900.00">
+        </div>
+        <div class="menu-item">
+          <img src="image/drink 2.jpg" alt="Pineapple Pop">
+          <h3>Pineapple Pop</h3>
+          <p>RS.300.00</p>
+          <button class="add-to-cart-btn" data-name="Pineapple Pop" data-price="300.00">Add to Cart</button>
+          <input type="number" class="quantity-input" min="1" value="1" data-name="Pineapple Pop" data-price="300.00">
+        </div>
+        <div class="menu-item">
+          <img src="image/drink 6.jpg" alt="Watermelon Zest">
+          <h3>Watermelon Zest</h3>
+          <p>RS.300.00</p>
+          <button class="add-to-cart-btn" data-name="Watermelon Zest" data-price="300.00">Add to Cart</button>
+          <input type="number" class="quantity-input" min="1" value="1" data-name="Watermelon Zest" data-price="300.00">
+        </div>
+        <div class="menu-item">
+          <img src="image/drink 7.jpg" alt="Strawberry Bubble Tea">
+          <h3>Strawberry Bubble Tea</h3>
+          <p>RS.900.00</p>
+          <button class="add-to-cart-btn" data-name="Strawberry Bubble Tea" data-price="900.00">Add to Cart</button>
+          <input type="number" class="quantity-input" min="1" value="1" data-name="Strawberry Bubble Tea" data-price="900.00">
+        </div>
+        <div class="menu-item">
+          <img src="image/drink 8.jpg" alt="Berry Velvet Bubble Tea">
+          <h3>Berry Velvet Bubble Tea</h3>
+          <p>RS.950.00</p>
+          <button class="add-to-cart-btn" data-name="Berry Velvet Bubble Tea" data-price="950.00">Add to Cart</button>
+          <input type="number" class="quantity-input" min="1" value="1" data-name="Berry Velvet Bubble Tea" data-price="950.00">
+        </div>
+        <div class="menu-item">
+          <img src="image/drink 9.jpg" alt="Classic Milk Bubble Tea">
+          <h3>Classic Milk Bubble Tea</h3>
+          <p>RS.700.00</p>
+          <button class="add-to-cart-btn" data-name="Classic Milk Bubble Tea" data-price="700.00">Add to Cart</button>
+          <input type="number" class="quantity-input" min="1" value="1" data-name="Classic Milk Bubble Tea" data-price="700.00">
+        </div>
+        <div class="menu-item">
+          <img src="image/drink 12.jpg" alt="Matcha Magic">
+          <h3>Matcha Magic</h3>
+          <p>RS.800.00</p>
+          <button class="add-to-cart-btn" data-name="Matcha Magic" data-price="800.00">Add to Cart</button>
+          <input type="number" class="quantity-input" min="1" value="1" data-name="Matcha Magic" data-price="800.00">
+        </div>
+      </section>
+    </main>
+  
+    <button class="view-cart-btn" onclick="window.location.href='cart.html'">View Cart</button>
+  
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>BeverageShop</h3>
+                <p>Bringing refreshment to every sip since 2020.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Drinks</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#reviews">Reviews</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form id="newsletterForm">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <p>© 2025 BeverageShop. All rights reserved.</p>
+    </footer>
+
+    <script src="cartManager.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

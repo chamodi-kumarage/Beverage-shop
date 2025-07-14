@@ -1,0 +1,345 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5e8c7;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: linear-gradient(135deg, #d4a017, #f0c14b);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #333;
+    transform: translateY(-2px);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 25px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.search-bar input {
+    border: none;
+    padding: 8px;
+    border-radius: 20px;
+    outline: none;
+    width: 150px;
+    transition: width 0.3s;
+}
+
+.search-bar input:focus {
+    width: 200px;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    color: #d4a017;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.cart {
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#cartCount {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #333;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 12px;
+}
+.user-menu {
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.user-menu .dropdown {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.user-menu:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.dropdown a:hover {
+    background: #d4a017;
+    color: #fff;
+}
+
+.menu-toggle {
+    display: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+footer {
+    background: #d4a017;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto 20px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-section ul li a:hover {
+    color: #333;
+}
+
+@media (max-width: 768px) {
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Menu Items Section */
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.menu-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05); /* Enlarge the entire menu item */
+}
+
+.menu-item img {
+    width: 180px; /* Increased width from 120px */
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover img {
+    transform: scale(1.2); /* Larger zoom effect */
+}
+
+
+.menu-item h3 {
+    font-size: 16px;
+    color: black;
+}
+
+.menu-item p {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+  /* Footer */
+.footer {
+    background-color: #24262b; 
+    padding: 40px 20px; 
+    color: #ffffff; 
+}
+
+.f_container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.row {
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+
+  /* Additional CSS for cart */
+    .cart-container {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin: 20px 0;
+      max-width: 300px;
+      background-color: #f9f9f9;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .cart-item h4 {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    .cart-item p {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .add-to-cart-btn {
+      background-color: #f0ad4e;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      color: white;
+      margin-top: 10px;
+    }
+
+    .add-to-cart-btn:hover {
+      background-color: #e69b34;
+    }
+
+    .checkout-btn {
+      background-color: #5bc0de;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      color: white;
+      margin-top: 20px;
+    }
+
+    .checkout-btn:hover {
+      background-color: #31b0d5;
+    }
+
+    .cart-container {
+        margin: 20px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background: #f9f9f9;
+      }
+      
+      .cart-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      
+      .checkout-btn, .view-cart-btn {
+        background-color: #ff9800;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+      
+      .checkout-btn:hover, .view-cart-btn:hover {
+        background-color: #e68900;
+      }
+      
+  /* Style for the quantity input */
+.quantity-input {
+    width: 50px; /* Adjust width as needed */
+    padding: 5px; /* Add some padding */
+    font-size: 16px; /* Font size for better readability */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    text-align: center; /* Center the text inside the input */
+    margin-top: 10px; /* Space between the input and other elements */
+    margin-bottom: 10px; /* Space below the input */
+  }
+  
+  .quantity-input:focus {
+    border-color: #f39c12; /* Highlight border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(243, 156, 18, 0.5); /* Add a subtle glow */
+  }
+  

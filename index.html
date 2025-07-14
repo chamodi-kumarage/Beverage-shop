@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeverageShop</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">BeverageShop</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Drinks</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search drinks...">
+                <button id="searchButton"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cartCount">0</span>
+            </div>
+            <div class="user-menu">
+                <i class="fas fa-user"></i>
+                <div class="dropdown">
+                    <a href="#login">Login</a>
+                    <a href="#register">Register</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <canvas class="bubble-canvas"></canvas>
+        <div class="hero-content">
+            <h1>Best Drinks In Town</h1>
+            <h2>Refreshing Beverage Delights</h2>
+            <p>Discover the ultimate beverage experience with BeverageShop! Our handcrafted drinks are made with premium ingredients, offering a burst of flavor in every sip. From refreshing fruit blends to bold coffee creations and exotic teas, we have a drink for every mood. Explore our curated selection and quench your thirst with quality and taste. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button class="shop-now">Shop Now</button>
+        </div>
+        <div class="hero-image">
+            <img src="image/mula.png" alt="Beverage Image">
+        </div>
+    </section>
+
+    <section id="drinks" class="drink-products">
+        <h2>Explore Our Drinks</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="image/8-removebg-preview.png" alt="Blueberry Bliss">
+                <p>Blueberry Bliss<br>USD $5<br>A refreshing blueberry-infused sparkling drink with a hint of creamy vanilla. Perfect for a light, fruity refreshment!</p>
+                <button class="add-to-cart" data-name="Blueberry Bliss" data-price="5.00">Add to Cart</button>
+                <input type="number" class="quantity-input" min="1" value="1" data-name="Blueberry Bliss" data-price="5.00">
+            </div>
+            <div class="product-card">
+                <img src="image/3-removebg-preview.png" alt="Cranberry Crunch">
+                <p>Cranberry Crunch<br>USD $6<br>Tart cranberry juice blended with a fizzy kick. Ideal for a vibrant, energizing sip!</p>
+                <button class="add-to-cart" data-name="Cranberry Crunch" data-price="6.00">Add to Cart</button>
+                <input type="number" class="quantity-input" min="1" value="1" data-name="Cranberry Crunch" data-price="6.00">
+            </div>
+            <div class="product-card">
+                <img src="image/4-removebg-preview.png" alt="Rose White Delight">
+                <p>Rose White Delight<br>USD $7<br>A floral white tea infused with rose petals and a touch of sweetness. A luxurious drink for serene moments!</p>
+                <button class="add-to-cart" data-name="Rose White Delight" data-price="7.00">Add to Cart</button>
+                <input type="number" class="quantity-input" min="1" value="1" data-name="Rose White Delight" data-price="7.00">
+            </div>
+            <div class="product-card">
+                <img src="image/9-removebg-preview.png" alt="Spice Mango Burst">
+                <p>Spice Mango Burst<br>USD $8<br>Exotic mango juice with a hint of chili spice. A bold, adventurous drink for thrill-seekers!</p>
+                <button class="add-to-cart" data-name="Spice Mango Burst" data-price="8.00">Add to Cart</button>
+                <input type="number" class="quantity-input" min="1" value="1" data-name="Spice Mango Burst" data-price="8.00">
+            </div>
+        </div>
+    </section>
+
+    <section id="latest" class="latest-products">
+        <h2>Fabulous Beverage Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="image/6-removebg-preview.png" alt="Sprite Spark">
+                <p>Sprite Spark<br>USD $5.00<br>A zesty lemon-lime soda with a fizzy burst. Perfect for a quick, refreshing pick-me-up!</p>
+                <button class="add-to-cart" data-name="Sprite Spark" data-price="5.00">Add to Cart</button>
+                <input type="number" class="quantity-input" min="1" value="1" data-name="Sprite Spark" data-price="5.00">
+            </div>
+            <div class="product-card">
+                <img src="image/7-removebg-preview.png" alt="Whiskey Sour Bites">
+                <p>Whiskey Sour Bites<br>USD $6.00<br>A non-alcoholic whiskey sour-inspired drink with tangy citrus and a smooth finish!</p>
+                <button class="add-to-cart" data-name="Whiskey Sour Bites" data-price="6.00">Add to Cart</button>
+                <input type="number" class="quantity-input" min="1" value="1" data-name="Whiskey Sour Bites" data-price="6.00">
+            </div>
+            <div class="product-card">
+                <img src="image/8-removebg-preview.png" alt="French 75 Elegance">
+                <p>French 75Elegance<br>USD $8.00<br>A sophisticated sparkling drink with gin-inspired notes and zesty lemon!</p>
+                <button class="add-to-cart" data-name="French 75 Elegance" data-price="8.00">Add to Cart</button>
+                <input type="number" class="quantity-input" min="1" value="1" data-name="French 75 Elegance" data-price="8.00">
+            </div>
+            <div class="product-card">
+                <img src="image/9-removebg-preview.png" alt="Hello Summer Glow">
+                <p>Hello Summer Glow<br>USD $9.00<br>A tropical pineapple and coconut-infused drink. Sun-kissed flavor in every sip!</p>
+                <button class="add-to-cart" data-name="Hello Summer Glow" data-price="9.00">Add to Cart</button>
+                <input type="number" class="quantity-input" min="1" value="1" data-name="Hello Summer Glow" data-price="9.00">
+            </div>
+            <div class="product-card">
+                <img src="image/10-removebg-preview.png" alt="Manhattan Mix">
+                <p>Manhattan Mix<br>USD $10.00<br>A rich, non-alcoholic whiskey and cherry-flavored drink. A classic, bold choice!</p>
+                <button class="add-to-cart" data-name="Manhattan Mix" data-price="10.00">Add to Cart</button>
+                <input type="number" class="quantity-input" min="1" value="1" data-name="Manhattan Mix" data-price="10.00">
+            </div>
+        </div>
+        <button class="view-all">View All</button>
+    </section>
+
+    <section id="specials" class="special-offers">
+        <h2>Special Offers</h2>
+        <div class="offer-grid">
+            <div class="offer-card">
+                <img src="image/13-removebg-preview.png" alt="Combo Deal">
+                <p>Drink Combo Deal<br>USD $15<br>Get 3 bottles for $15! Save $3 today only. Hurry!</p>
+                <button class="grab-offer" data-name="Drink Combo Deal" data-price="15.00">Grab Offer</button>
+                <input type="number" class="quantity-input" min="1" value="1" data-name="Drink Combo Deal" data-price="15.00">
+            </div>
+            <div class="offer-card">
+                <img src="image/14-removebg-preview.png" alt="Family Pack">
+                <p>Family Pack<br>USD $25<br>6 assorted drinks for $25. Perfect for gatherings!</p>
+                <button class="grab-offer" data-name="Family Pack" data-price="25.00">Grab Offer</button>
+                <input type="number" class="quantity-input" min="1" value="1" data-name="Family Pack" data-price="25.00">
+            </div>
+            <div class="offer-card">
+                <img src="image/14-removebg-preview.png" alt="Seasonal Special">
+                <p>Seasonal Special<br>USD $7<br>Try our limited-edition iced tea blend for $7!</p>
+                <button class="grab-offer" data-name="Seasonal Special" data-price="7.00">Grab Offer</button>
+                <input type="number" class="quantity-input" min="1" value="1" data-name="Seasonal Special" data-price="7.00">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>All About BeverageShop</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="image/lassa.jpg" alt="Beverage Display">
+            </div>
+            <div class="about-text">
+                <p>BeverageShop was founded in 2020 with a passion for crafting refreshing and innovative drinks. Our mission is to bring unique, high-quality beverages to drink enthusiasts worldwide. From sparkling sodas to artisanal teas and bold coffee blends, every sip is designed to delight. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. We source only the finest ingredients, ensuring every bottle is a masterpiece of flavor and refreshment.</p>
+                <ul>
+                    <li>Artisanal Sparkling Drinks</li>
+                    <li>Premium Coffee Blends</li>
+                    <li>Exotic Tea Infusions</li>
+                    <li>Seasonal Fruit Juices</li>
+                    <li>Non-Alcoholic Cocktail Mixes</li>
+                </ul>
+                <button class="view-more">View More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="customer-reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review-grid">
+            <div class="review-card">
+                <p>"The Blueberry Bliss drink is incredible! So refreshing!" - Jane D.</p>
+            </div>
+            <div class="review-card">
+                <p>"Hello Summer Glow is my go-to for hot days!" - Mike S.</p>
+            </div>
+            <div class="review-card">
+                <p>"Amazing quality and flavors. BeverageShop is the best!" - Sarah L.</p>
+            </div>
+            <div class="review-card">
+                <p>"The Manhattan Mix is so bold and tasty!" - Alex P.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-us">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us at support@beverageshop.com or call us at +1-800-DRINKS. We're here to help from 9 AM to 6 PM, Monday to Friday.</p>
+        <div class="contact-content">
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <h3>Visit Us</h3>
+                <p>123 Refreshment Lane, Flavor City, FC 12345</p>
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>BeverageShop</h3>
+                <p>Bringing refreshment to every sip since 2020.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#drinks">Drinks</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form id="newsletterForm">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <p>© 2025 BeverageShop. All rights reserved.</p>
+    </footer>
+
+    <script src="cartManager.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
